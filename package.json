@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build_lib": "ng build --configuration production ngx-material-dynamic-form-builder",
+    "npm_pack": "cd dist/ngx-material-dynamic-form-builder && npm pack",
+    "package": "npm run build_lib && npm run npm_pack"
   },
   "private": true,
   "dependencies": {
